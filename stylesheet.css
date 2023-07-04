@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    font-family: "Lucida Grande";
+    /* border: 1px solid black; */
+}
+
+.container{
+    width: 90%;
+    padding: 0 15px;
+    margin:0 auto;
+    /* border: 1px solid black; */
+}
+
+/* FOR TOP-WRAPPER  ----------------------------------------*/
+
+.top-wrapper{
+    background-color: white;
+}
+
+.top-wrapper h1{
+    /* border: 1px solid blue; */
+    text-align: center ;
+    font-size: 56px;
+    letter-spacing: 4px;
+}
+
+.top-wrapper h1 .titik{
+    font-size: 100px;
+    margin-left:-24px;
+    color: rgb(168, 168, 70);
+    /* border: 1px solid red; */
+}
+
+.top-wrapper p{
+    /* border: 1px solid red; */
+    text-align: center;
+    letter-spacing: 2px;
+    font-size:24px;
+    font-stretch: ultra-condensed;
+}
+
+.iconprogate{
+    text-align: center;
+}
+
+.iconprogate img{
+    width: 300px;
+    height: auto;
+}
+
+/* ---------------------------------------------------- */
+/* FOR HEADER -------------------------------------------*/
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(47, 52, 52, 0.993);
+}
+
+
+.logo {
+    float: left;
+    margin-right: 30px;
+    /* align-items: center; */
+}
+
+ .logo h3{
+    color: rgb(248, 244, 244);
+    padding:-5px 25px 0px 25px;
+    letter-spacing:5px;
+    font-weight: bold;
+}
+
+.kanan{
+    float: right;
+}
+
+header .menu a{
+    display: inline-block;
+    font-size:12px;
+}
+
+.menu a{
+    color: rgb(248, 244, 244);
+    line-height: 60px;
+    padding: 0 10px;
+    display: block;
+}
+
+/* FOR HEADER (lesson-wrapper)-------------------------------------------*/
+.lesson-wrapper{
+    /* text-align:center; */
+    height: 300px;
+    background-color: rgb(208, 201, 201);
+    margin-top: 50px;
+}
+
+.heading{
+    text-align:center;
+}
+
+.lesson-wrapper .heading h2{
+    padding-top: 55px;
+    /* border:1px solid black ; */
+}
+
+.teks{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    padding:0px 10px;
+    padding-bottom: 80px;
+}
+.heading h2{
+    margin-top: 50px;
+}
+
+.contact-form{
+    height: 350px;
+    /* margin-top: 30px; */
+    text-align:center;
+    background-color:rgb(208, 201, 201);
+    
+}
+
+.contact-form h2{
+    padding-top: 55px;
+}
+
+.email input{
+    margin-top:10px;
+    margin-bottom: 16px;
+    width: 600px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.massage textarea{
+    margin-top:15px;
+    width: 600px;
+    height: 52px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.contact-submit{
+    margin-top: 20px;
+    width: 250px;
+    border:none;
+    margin-bottom:20px;
+    height: 30px;
+    /* cursor:pointer; */
+    box-shadow:3px 7px rgb(150, 175, 112);
+    background-color: rgb(205, 205, 86);
+    border-radius: 6px;
+    
+}
+
+.contact-submit:hover{
+    cursor: pointer;
+}
+
+.contact-submit:active{
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+
+/* -------------------------------------------------------------- */
+/* --footer */
+
+footer{
+    background-color:rgba(75, 77, 77, 0.993);
+    height: 120px;
+    color: white;
+    padding: 20px;
+}
+
+.left2 li{
+    list-style: none;
+    padding:4px;
+}
+
+.left1 h3{
+    float: left;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+
+.left2 a{
+    color: white;
+    letter-spacing:3px;
+    font-size: 18px;
+}
+
+.left2 {
+    text-decoration:none ;
+    float: right;
+    /* list-style: none; */
+}
+
+/* -----------icon */
+
+.menu-icon .garistiga {
+    display: none;
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+}
+
