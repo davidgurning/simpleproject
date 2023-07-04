@@ -1,0 +1,124 @@
+@media (max-width:670px) {
+    .menu{
+        display: none;
+    }
+
+    .menu-icon .garistiga{
+        display: block;
+    } 
+
+    .menu-icon{
+        /* border: 1px solid black; */
+        float: right;
+        color: white;
+    }
+
+    .header-rigth .kanan{
+        /* border: 1px solid red; */
+        float: right;
+    }
+
+
+
+/* -------------------------- */
+
+/* top-wrapper---------------------- */
+    
+.top-wrapper h1{
+    font-size: 40px;
+}
+
+
+    
+
+/* ------------------- */
+/* LESSON-WRAPPER---------------------- */
+.lesson-wrapper{
+    /* text-align:center; */
+    height: 500px;
+}
+
+
+
+/* -------------------- */
+/* CONTACT-FORM----------------------------- */
+.email input{
+    width: 300px;
+}
+
+.massage textarea{
+    width:300px;
+}
+
+
+
+/* ---------------------- */
+
+
+    .container{
+        margin:0;
+        /* max-width:100%; */
+    }
+
+    .icons{
+        flex-direction:column;
+    }
+
+    .icons .icon{
+        margin:0 auto;
+    }
+
+    footer{
+        text-align:center;
+        height:100px;
+        padding:20px 0px 0px 0px;
+        /* border: 1px solid red; */
+    }
+
+    .left1{
+     
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .left1 h3{
+        float:none;
+        font-size: 20px;
+        margin:0px auto;
+ 
+    }
+    
+    .left2 li{
+
+        padding-right: 0px;
+
+        text-align: center;
+        flex: auto;
+    }
+
+    ul{
+      
+        display: flex;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .left2{
+        float: none;
+    }
+    
+    .left2 a{
+        background-color: aliceblue;
+        border-radius: 6px;
+        padding: 2px;
+        color: black;
+        font-weight: bold;
+        opacity: 0.7;
+        font-size: 12px;
+        letter-spacing: 0px;
+        
+    }
+}
+
+/* -------------------------- */
+
