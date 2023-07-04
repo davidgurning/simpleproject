@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+
+    <style>
+        .slider-container {
+  text-align: center;
+  background-color: #eee;
+}
+
+.slider-item {
+  display: none; /* Tersembunyi secara default */
+}
+
+img {
+  width: 30%;
+  height: 300px;
+  object-fit: contain;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 1120px;
+  left: 32%;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+/* Animasi */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-rigth">
+                <div class="logo">
+                    <h3>NINJA KEN</h3>
+                </div>
+                <div class="kanan">
+                    <div class="menu">
+                            <a href="#">Proyek Contoh</a>
+                            <a href="#">Tentang Saya</a>
+                            <a href="#">Hubungi Saya</a>
+                    </div>
+                
+                    <div class="menu-icon">
+                        <span class="fa fa-bars garistiga"></span>
+                    </div>   
+                </div>        
+            </div>
+        </div>
+    </header>
+
+    <div class="top-wrapper">
+        <div class="container">
+            <h1>NINJA KEN <span class="titik">.</span></h1>
+            <p class="bawah">MY PORTOFOLIO</p>
+
+            <div class="iconprogate">
+                    <img src="NinjaKen.png" alt="foto saya">
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-wrapper">
+        <div class="container">
+            <div class="heading">
+                <h2>Tentang Saya</h2>
+            </div>
+            <div class="teks">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis accusamus voluptates corrupti consectetur rem perspiciatis nisi nesciunt. Eveniet accusamus recusandae, rem culpa tempore officia doloremque possimus accusantium veritatis mollitia nobis.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aliquam error assumenda ipsa sed sit harum dignissimos ea hic, inventore cum voluptate nisi placeat praesentium debitis. Impedit et doloribus deleniti.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum recusandae molestias mollitia eum nobis possimus magnam, officia alias magni quod porro eveniet, quos soluta rem in praesentium ut rerum. Doloremque!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">  -->
+        <div class="slider-container">
+            <div class="slider-item fade">
+                <img src="satu.png" />
+              </div>
+        
+              <div class="slider-item fade">
+                <img src="dua.png" />
+              </div>
+        
+              <div class="slider-item fade">
+                <img src="tiga.png" />
+              </div>
+              <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+              <a class="next" onclick="updateSlide(1)">&#10095;</a>
+        </div>
+
+
+    <div class="contact-form">
+        <!-- <div class="container"> -->
+                <h2 class="heading">Hubungi Saya</h2>
+
+            <div class="contact">
+                <div class="email">
+                    <input id = "email" type="email" value="Email (Diperlukan)">
+                </div>
+                
+                <div class="massage">
+                    <textarea name="massage" id = "textarea">Massage (Diperlukan)</textarea>
+                </div>
+
+                <div clsss=" contact-submit">
+                    <input class="contact-submit" id="krm" type="submit" value="kirim">
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <div class="left1">
+                <h3>NINJA KEN</h3>
+            </div>
+
+            <div class="left2">
+                <ul>
+                    <li><a href="#">Tentang Saya</a></li>
+                    <li class="tengah"><a href="#">Proyek Contoh</a></li>
+                    <li><a href="#">Hubungi Saya</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+    const updateSlide = (n) => {
+        slideIndex += n;
+        showSlide(slideIndex);
+    }   
+
+    const showSlide = (n) => {
+        const slides = document.getElementsByClassName("slider-item");
+        if (n > slides.length - 1) {
+             slideIndex = 0;
+        }
+        if (n < 0) {
+         slideIndex = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+}
+
+showSlide(slideIndex);
+
+
+//--------------------------------------------------------------
+
+const input = document.getElementById("email");
+const textarea = document.getElementById("textarea");
+const kirim = document.getElementById("krm");
+
+input.addEventListener("click",function(){
+    input.value = "";
+    input.style.cursor = "text";
+});
+textarea.addEventListener("click",function(){
+    textarea.value = "";
+    textarea.style.cursor = "text";
+});
+
+kirim.addEventListener("click", function(){
+    if (input.value === "") {
+        alert("email wajib diisi");
+    }
+
+    else if (textarea.value === "") {
+        alert("password wajib diisi");
+    }
+
+    else if (textarea.value === "" || input.value === "") {
+        alert("email dan password wajib diisi");
+    }
+});
+
+
+    </script>
+</body>
+</html>
